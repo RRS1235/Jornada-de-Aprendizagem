@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almoxarifado - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="icon">📦</div>
+        <div>
+          <h2>Almoxarifado</h2>
+          <p>Sistema de Gestão</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#" class="active">🏠 Dashboard</a>
+        <a href="#">📦 Estoque</a>
+        <a href="#">📋 Requisições</a>
+        <a href="#">🛒 Solicitar Compra</a>
+      </nav>
+
+      <div class="user">
+        <div class="user-info">
+          <p><strong>Edson Ristow Junior</strong></p>
+          <span>Administrador</span>
+        </div>
+        <button class="logout">⎋ Sair</button>
+      </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <header>
+        <h1>Bem-vindo, Edson Ristow Junior!</h1>
+        <p>Painel de controle do almoxarifado</p>
+      </header>
+
+      <!-- Cards superiores -->
+      <section class="cards">
+        <div class="card">
+          <h3>Total de Itens</h3>
+          <p class="number">5</p>
+        </div>
+        <div class="card alert">
+          <h3>Abaixo do Mínimo</h3>
+          <p class="number">2</p>
+        </div>
+        <div class="card warning">
+          <h3>Requisições Abertas</h3>
+          <p class="number">0</p>
+        </div>
+        <div class="card purple">
+          <h3>Solicitações de Compra</h3>
+          <p class="number">0</p>
+        </div>
+      </section>
+
+      <div class="grid">
+        <!-- Alertas de estoque -->
+        <section class="stock-alerts">
+          <h2>⚠️ Alertas de Estoque</h2>
+          <div class="alert-item low">
+            <h3>Papel A4 500 folhas</h3>
+            <p>Código: PAP001</p>
+            <p>Estoque: 5 un | Mínimo: 20 un</p>
+            <span class="tag">Baixo</span>
+          </div>
+          <div class="alert-item low">
+            <h3>Tinta Branca 18L</h3>
+            <p>Código: TIN001</p>
+            <p>Estoque: 3 un | Mínimo: 5 un</p>
+            <span class="tag">Baixo</span>
+          </div>
+        </section>
+
+        <!-- Ações rápidas -->
+        <section class="quick-actions">
+          <h2>📊 Ações Rápidas</h2>
+          <button class="btn blue">Gerenciar Estoque<br><span>Ver e editar itens</span></button>
+          <button class="btn green">Ver Requisições<br><span>Aprovar pedidos</span></button>
+          <button class="btn purple">Solicitar Compra<br><span>Pedir novos itens</span></button>
+        </section>
+      </div>
+
+      <div class="grid bottom">
+        <section class="recent">
+          <h2>🧾 Requisições Recentes</h2>
+          <p class="empty">Nenhuma atividade encontrada</p>
+        </section>
+
+        <section class="recent">
+          <h2>🛍️ Solicitações Recentes</h2>
+          <p class="empty">Nenhuma atividade encontrada</p>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
 
