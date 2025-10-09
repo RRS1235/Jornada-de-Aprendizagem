@@ -11,33 +11,36 @@
     <!-- Menu lateral -->
     <aside class="sidebar">
       <div class="logo">
-        <div class="icon">📦</div>
+        <div class="icon"></div>
         <div>
           <h2>Almoxarifado</h2>
           <p>Sistema de Gestão</p>
         </div>
+        <Button class="darkMode">Dark Mode</Button>
       </div>
 
+      <!-- Aba do menu -->
       <nav class="menu">
-        <a href="#" class="active">🏠 Dashboard</a>
-        <a href="#">📦 Estoque</a>
-        <a href="#">📋 Requisições</a>
-        <a href="#">🛒 Solicitar Compra</a>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Estoque</a>
+        <a href="#">Requisições</a>
+        <a href="#">Solicitar Compra</a>
       </nav>
 
+      <!-- Aba do usuario -->
       <div class="user">
         <div class="user-info">
-          <p><strong>Edson Ristow Junior</strong></p>
+          <p><strong>Usuario</strong></p>
           <span>Administrador</span>
         </div>
-        <button class="logout">⎋ Sair</button>
+        <button class="logout">Sair</button>
       </div>
     </aside>
 
     <!-- Conteúdo principal -->
     <main class="main-content">
       <header>
-        <h1>Bem-vindo, Edson Ristow Junior!</h1>
+        <h1>Bem-vindo, Usuario</h1>
         <p>Painel de controle do almoxarifado</p>
       </header>
 
@@ -45,11 +48,11 @@
       <section class="cards">
         <div class="card">
           <h3>Total de Itens</h3>
-          <p class="number">5</p>
+          <p class="number">0</p>
         </div>
         <div class="card alert">
           <h3>Abaixo do Mínimo</h3>
-          <p class="number">2</p>
+          <p class="number">0</p>
         </div>
         <div class="card warning">
           <h3>Requisições Abertas</h3>
@@ -88,12 +91,14 @@
         </section>
       </div>
 
+      <!-- Container de Requisição -->
       <div class="grid bottom">
         <section class="recent">
           <h2>🧾 Requisições Recentes</h2>
           <p class="empty">Nenhuma atividade encontrada</p>
         </section>
 
+        <!-- Container de Requisição -->
         <section class="recent">
           <h2>🛍️ Solicitações Recentes</h2>
           <p class="empty">Nenhuma atividade encontrada</p>
@@ -101,6 +106,6 @@
       </div>
     </main>
   </div>
+
 </body>
 </html>
-
