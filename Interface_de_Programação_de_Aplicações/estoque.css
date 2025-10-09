@@ -1,0 +1,188 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: #f6f8fa;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #1e293b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .logo p {
+    font-size: 12px;
+    color: #94a3b8;
+  }
+  
+  .darkMode {
+    background: #334155;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    background: #334155;
+    color: white;
+  }
+  
+  .user {
+    border-top: 1px solid #334155;
+    padding-top: 15px;
+  }
+  
+  .user-info p {
+    margin-bottom: 4px;
+  }
+  
+  .logout {
+    background: #ef4444;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Conteúdo principal */
+  .main-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  
+  header p {
+    color: #64748b;
+    margin-bottom: 25px;
+  }
+  
+  /* Barra de ações */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .add {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .add:hover {
+    background: #2563eb;
+  }
+  
+  .search {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    width: 250px;
+  }
+  
+  /* Tabela */
+  .table-section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background: #f1f5f9;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .status.low {
+    background: #ef4444;
+  }
+  
+  .status.ok {
+    background: #22c55e;
+  }
+  
+  .edit, .delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .delete {
+    color: #ef4444;
+  }
+  
