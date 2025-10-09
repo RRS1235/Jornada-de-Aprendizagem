@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Almoxarifado - Estoque</title>
+  <link rel="stylesheet" href="estoque.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="icon"></div>
+        <div>
+          <h2>Almoxarifado</h2>
+          <p>Sistema de Gestão</p>
+        </div>
+        <button class="darkMode">Dark Mode</button>
+      </div>
+
+      <!-- Aba do menu -->
+      <nav class="menu">
+        <a href="index.html">Dashboard</a>
+        <a href="estoque.html" class="active">Estoque</a>
+        <a href="#">Requisições</a>
+        <a href="#">Solicitar Compra</a>
+      </nav>
+
+      <!-- Aba do usuario -->
+      <div class="user">
+        <div class="user-info">
+          <p><strong>Usuário</strong></p>
+          <span>Administrador</span>
+        </div>
+        <button class="logout">Sair</button>
+      </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <header>
+        <h1>Controle de Estoque</h1>
+        <p>Gerencie os itens disponíveis no almoxarifado</p>
+      </header>
+
+      <!-- Ações -->
+      <div class="actions">
+        <button class="add">➕ Novo Item</button>
+        <input type="text" placeholder="Pesquisar item..." class="search">
+      </div>
+
+      <!-- Tabela -->
+      <section class="table-section">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Descrição</th>
+              <th>Categoria</th>
+              <th>Quantidade</th>
+              <th>Mínimo</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PAP001</td>
+              <td>Papel A4 500 folhas</td>
+              <td>Material de Escritório</td>
+              <td>5</td>
+              <td>20</td>
+              <td><span class="status low">Baixo</span></td>
+              <td><button class="edit">✏️</button> <button class="delete">🗑️</button></td>
+            </tr>
+            <tr>
+              <td>TIN001</td>
+              <td>Tinta Branca 18L</td>
+              <td>Manutenção</td>
+              <td>3</td>
+              <td>5</td>
+              <td><span class="status low">Baixo</span></td>
+              <td><button class="edit">✏️</button> <button class="delete">🗑️</button></td>
+            </tr>
+            <tr>
+              <td>CAN001</td>
+              <td>Caneta Azul</td>
+              <td>Material de Escritório</td>
+              <td>150</td>
+              <td>50</td>
+              <td><span class="status ok">OK</span></td>
+              <td><button class="edit">✏️</button> <button class="delete">🗑️</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
